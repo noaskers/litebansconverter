@@ -1,0 +1,26 @@
+{
+  "name": "csv-cleaner-app",
+  "version": "1.0.0",
+  "description": "A web application for uploading and cleaning CSV files for bans, warns, mutes, and kicks.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "csv-parser": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "keywords": [
+    "csv",
+    "cleaner",
+    "web",
+    "application"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

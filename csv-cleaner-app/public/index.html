@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSV Cleaner App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSV Cleaner</h1>
+
+      <!-- Upload forms for different punishment types -->
+      <form id="bans-form" enctype="multipart/form-data">
+        <label for="bans-file">Upload Bans CSV:</label>
+        <input
+          type="file"
+          id="bans-file"
+          name="bans-file"
+          accept=".csv"
+          required
+        />
+        <button type="submit">Upload Bans</button>
+      </form>
+
+      <form id="mutes-form" enctype="multipart/form-data">
+        <label for="mutes-file">Upload Mutes CSV:</label>
+        <input
+          type="file"
+          id="mutes-file"
+          name="mutes-file"
+          accept=".csv"
+          required
+        />
+        <button type="submit">Upload Mutes</button>
+      </form>
+
+      <form id="kicks-form" enctype="multipart/form-data">
+        <label for="kicks-file">Upload Kicks CSV:</label>
+        <input
+          type="file"
+          id="kicks-file"
+          name="kicks-file"
+          accept=".csv"
+          required
+        />
+        <button type="submit">Upload Kicks</button>
+      </form>
+
+      <form id="warns-form" enctype="multipart/form-data">
+        <label for="warns-file">Upload Warns CSV:</label>
+        <input
+          type="file"
+          id="warns-file"
+          name="warns-file"
+          accept=".csv"
+          required
+        />
+        <button type="submit">Upload Warns</button>
+      </form>
+
+      <!-- Search form -->
+      <h2>Search Punishments</h2>
+      <form id="search-form">
+        <input
+          type="text"
+          id="search-staff"
+          placeholder="Search by staff name"
+        />
+        <input type="month" id="search-month" name="search-month" />
+        <button type="submit">Search</button>
+      </form>
+
+      <!-- Section to display punishment summary -->
+      <h2>Punishment Summary</h2>
+      <div id="summary" class="styled-summary"></div>
+
+      <!-- Section to display punishment details -->
+      <h2>Punishment Details</h2>
+      <div id="result"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
